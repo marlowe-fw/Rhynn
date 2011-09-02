@@ -1,0 +1,33 @@
+[database]
+string server = 127.0.0.1
+int port = 3306
+string username = root
+string password = xypass12
+string schema = fw_core
+
+
+[network]
+# maximum number of bytes to send for each client in one go (one server step)
+int maxClientSendPerLoop = 2048
+
+[graphics]
+# netChunkSize defines how many bytes are sent for one image chunk 
+# (one packet of image data) when an image is loaded by the client 
+int netChunkSize = 512
+string imageBasePath = ../FWWorldGraphics
+
+[logging]
+string mainLogFile = ./logs/log.txt
+
+[world]
+string configFile = ./config_world.txt
+
+[characters]
+int initialPlayfieldId = 100019
+int initialPlayfieldX = 0
+int initialPlayfieldY = 0
+
+[playfields]
+# netChunkSize defines how many bytes are sent for one playfield data chunk 
+# (one packet of playfield cell data) when an the playfield is loaded by the client 
+int netChunkSize = 512

@@ -1,0 +1,14 @@
+[characterclasses]
+
+[characters]
+
+[gameservers]
+
+[playfields]
+bool load = true
+string loadFilter = system_status <> 'none'
+bool loadGraphicsInfo = true
+
+[graphics]
+bool load = true
+string loadFilter = load_for_world = 'yes'

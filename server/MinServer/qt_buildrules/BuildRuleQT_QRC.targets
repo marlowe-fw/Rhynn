@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <ItemGroup>
+ <ResFiles Include="$(MSBuildProjectDirectory)\**\*.qrc" />
+ </ItemGroup>
+
+ <Target Name="CompileQtQRC" BeforeTargets="ClCompile" Inputs="@(ResFiles)" Outputs="@(ResFiles->'%(RootDir)%(Directory)qrc_%(Filename).cpp')">
+ <Message Text="Compiling: %(ResFiles.FullPath) using rcc" />
+ <Exec Command="$(QTDIR)\bin\rcc.exe %(ResFiles.FullPath) -o %(ResFiles.RootDir)%(ResFiles.Directory)qrc_%(ResFiles.Filename).cpp"/>
+ </Target>
+</Project>

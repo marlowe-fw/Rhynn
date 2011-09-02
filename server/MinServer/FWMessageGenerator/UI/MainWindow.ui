@@ -1,0 +1,693 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>949</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+    <horstretch>3</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle" >
+   <string>MessageGenerator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QVBoxLayout" name="verticalLayout_3" >
+    <item>
+     <widget class="QSplitter" name="splitter" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Preferred" hsizetype="Expanding" >
+        <horstretch>0</horstretch>
+        <verstretch>2</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="layoutWidget" >
+       <layout class="QVBoxLayout" name="messagesWidgetLayout" >
+        <property name="sizeConstraint" >
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3" >
+          <property name="sizePolicy" >
+           <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title" >
+           <string>Filter</string>
+          </property>
+          <property name="flat" >
+           <bool>false</bool>
+          </property>
+          <property name="checkable" >
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6" >
+           <property name="leftMargin" >
+            <number>4</number>
+           </property>
+           <property name="topMargin" >
+            <number>4</number>
+           </property>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2" >
+             <item row="2" column="1" >
+              <widget class="QLineEdit" name="lineEditFilter" />
+             </item>
+             <item row="2" column="0" >
+              <widget class="QLabel" name="label_6" >
+               <property name="text" >
+                <string>Search string:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" >
+              <widget class="QLabel" name="label_7" >
+               <property name="text" >
+                <string>Display categories:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1" >
+              <layout class="QHBoxLayout" name="horizontalLayout_5" >
+               <item>
+                <widget class="QCheckBox" name="cbFilterApplySymID" >
+                 <property name="text" >
+                  <string>Symbolic ID</string>
+                 </property>
+                 <property name="checked" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cbFilterApplySymName" >
+                 <property name="text" >
+                  <string>Symbolic Name</string>
+                 </property>
+                 <property name="checked" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cbFilterApplyDescription" >
+                 <property name="text" >
+                  <string>Description</string>
+                 </property>
+                 <property name="checked" >
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="1" >
+              <layout class="QHBoxLayout" name="horizontalLayout_2" >
+               <item>
+                <widget class="QCheckBox" name="cbCategoryFilterSystem" >
+                 <property name="text" >
+                  <string>system</string>
+                 </property>
+                 <property name="checked" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cbCategoryFilterAdmin" >
+                 <property name="text" >
+                  <string>admin</string>
+                 </property>
+                 <property name="checked" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cbCategoryFilterTest" >
+                 <property name="text" >
+                  <string>test</string>
+                 </property>
+                 <property name="checked" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cbCategoryFilterGame" >
+                 <property name="text" >
+                  <string>game</string>
+                 </property>
+                 <property name="checked" >
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0" colspan="2" >
+              <widget class="Line" name="line" >
+               <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0" >
+              <widget class="QLabel" name="label_8" >
+               <property name="text" >
+                <string>Fields to search:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2" >
+              <widget class="QPushButton" name="btnSetFilter" >
+               <property name="text" >
+                <string>Set Filter</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="images.qrc" >
+                 <normaloff>:/img/img/table_go.png</normaloff>:/img/img/table_go.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4" >
+             <property name="orientation" >
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0" >
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="messageTable" >
+          <property name="sizePolicy" >
+           <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+            <horstretch>2</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3" >
+          <item>
+           <widget class="QPushButton" name="btnRefresh" >
+            <property name="text" >
+             <string>Refresh</string>
+            </property>
+            <property name="icon" >
+             <iconset resource="images.qrc" >
+              <normaloff>:/img/img/arrow_refresh.png</normaloff>:/img/img/arrow_refresh.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2" >
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0" >
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnRemove" >
+            <property name="text" >
+             <string>Remove</string>
+            </property>
+            <property name="icon" >
+             <iconset resource="images.qrc" >
+              <normaloff>:/img/img/delete.png</normaloff>:/img/img/delete.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAdd" >
+            <property name="text" >
+             <string>Add</string>
+            </property>
+            <property name="icon" >
+             <iconset resource="images.qrc" >
+              <normaloff>:/img/img/add.png</normaloff>:/img/img/add.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+       <zorder>messageTable</zorder>
+       <zorder>groupBox_3</zorder>
+      </widget>
+      <widget class="QDockWidget" name="propertyWidget" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="baseSize" >
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="floating" >
+        <bool>false</bool>
+       </property>
+       <property name="features" >
+        <set>QDockWidget::DockWidgetMovable</set>
+       </property>
+       <property name="allowedAreas" >
+        <set>Qt::AllDockWidgetAreas</set>
+       </property>
+       <property name="windowTitle" >
+        <string>Message Properties</string>
+       </property>
+       <widget class="QWidget" name="dockWidgetContents" >
+        <layout class="QVBoxLayout" name="verticalLayout" >
+         <property name="margin" >
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+             <horstretch>0</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title" >
+            <string>Basic</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout" >
+            <property name="sizeConstraint" >
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <property name="horizontalSpacing" >
+             <number>6</number>
+            </property>
+            <item row="0" column="0" >
+             <widget class="QLabel" name="label_10" >
+              <property name="text" >
+               <string>Sym. ID</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" >
+             <widget class="QLineEdit" name="editSymID" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>4</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1" colspan="6" >
+             <widget class="QPlainTextEdit" name="editDescription" />
+            </item>
+            <item row="5" column="0" >
+             <widget class="QLabel" name="label_5" >
+              <property name="text" >
+               <string>Description</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" >
+             <widget class="QLabel" name="label_2" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text" >
+               <string>Category</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="2" >
+             <widget class="QComboBox" name="editCategory" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                <horstretch>3</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="5" colspan="2" >
+             <widget class="QComboBox" name="editGroup" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+                <horstretch>3</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="5" >
+             <widget class="QLabel" name="label_3" >
+              <property name="text" >
+               <string>Generate Server Handler</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="6" >
+             <widget class="QLineEdit" name="editGenHandler" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>4</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="readOnly" >
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5" colspan="2" >
+             <widget class="QLineEdit" name="editSymName" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>3</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3" >
+             <widget class="QLabel" name="label_4" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text" >
+               <string>   Sym. name</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3" >
+             <widget class="QLabel" name="label_9" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text" >
+               <string>Module</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1" >
+             <widget class="QLabel" name="label_11" >
+              <property name="text" >
+               <string>Long message</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2" >
+             <widget class="QLineEdit" name="editLongMessage" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>4</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="readOnly" >
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+             <horstretch>0</horstretch>
+             <verstretch>2</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="title" >
+            <string>Fields</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2" >
+            <item>
+             <widget class="QTableView" name="fieldTable" >
+              <property name="autoScroll" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4" >
+           <property name="spacing" >
+            <number>2</number>
+           </property>
+           <property name="sizeConstraint" >
+            <enum>QLayout::SetMinimumSize</enum>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_3" >
+             <property name="orientation" >
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType" >
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0" >
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnRemoveField" >
+             <property name="text" >
+              <string>Remove Field</string>
+             </property>
+             <property name="icon" >
+              <iconset resource="images.qrc" >
+               <normaloff>:/img/img/delete.png</normaloff>:/img/img/delete.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnAddField" >
+             <property name="text" >
+              <string>Add Field</string>
+             </property>
+             <property name="icon" >
+              <iconset resource="images.qrc" >
+               <normaloff>:/img/img/add.png</normaloff>:/img/img/add.png</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" >
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <property name="sizeConstraint" >
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer" >
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblChanges" >
+        <property name="palette" >
+         <palette>
+          <active>
+           <colorrole role="WindowText" >
+            <brush brushstyle="SolidPattern" >
+             <color alpha="255" >
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText" >
+            <brush brushstyle="SolidPattern" >
+             <color alpha="255" >
+              <red>255</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText" >
+            <brush brushstyle="SolidPattern" >
+             <color alpha="255" >
+              <red>118</red>
+              <green>116</green>
+              <blue>108</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="text" >
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSaveChanges" >
+        <property name="enabled" >
+         <bool>false</bool>
+        </property>
+        <property name="text" >
+         <string>Save Changes</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="images.qrc" >
+          <normaloff>:/img/img/disk_multiple.png</normaloff>:/img/img/disk_multiple.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnGenerate" >
+        <property name="text" >
+         <string>Generate  Files for ALL Messages</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="images.qrc" >
+          <normaloff>:/img/img/cog_go.png</normaloff>:/img/img/cog_go.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>949</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionExit" />
+   </widget>
+   <addaction name="menuFile" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="actionExit" >
+   <property name="text" >
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>btnSaveChanges</tabstop>
+  <tabstop>lineEditFilter</tabstop>
+  <tabstop>cbFilterApplySymID</tabstop>
+  <tabstop>cbFilterApplySymName</tabstop>
+  <tabstop>cbFilterApplyDescription</tabstop>
+  <tabstop>cbCategoryFilterSystem</tabstop>
+  <tabstop>cbCategoryFilterAdmin</tabstop>
+  <tabstop>cbCategoryFilterTest</tabstop>
+  <tabstop>cbCategoryFilterGame</tabstop>
+  <tabstop>btnSetFilter</tabstop>
+  <tabstop>messageTable</tabstop>
+  <tabstop>btnRefresh</tabstop>
+  <tabstop>btnRemove</tabstop>
+  <tabstop>btnAdd</tabstop>
+  <tabstop>btnRemoveField</tabstop>
+  <tabstop>btnAddField</tabstop>
+  <tabstop>btnGenerate</tabstop>
+  <tabstop>editSymID</tabstop>
+  <tabstop>editCategory</tabstop>
+  <tabstop>editGroup</tabstop>
+  <tabstop>editGenHandler</tabstop>
+  <tabstop>editDescription</tabstop>
+  <tabstop>fieldTable</tabstop>
+ </tabstops>
+ <resources>
+  <include location="images.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>471</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="img" >
+    <file>img/cog_go.png</file>
+    <file>img/disk_multiple.png</file>
+    <file>img/table_go.png</file>
+    <file>img/arrow_refresh.png</file>
+    <file>img/delete.png</file>
+    <file>img/add.png</file>
+    <file>img/spin.png</file>
+  </qresource>
+</RCC>

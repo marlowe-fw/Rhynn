@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+ <ItemGroup>
+ <UIFiles Include="$(MSBuildProjectDirectory)\**\*.ui" />
+ </ItemGroup>
+
+<Target Name="CompileQtUI" BeforeTargets="ClCompile" Inputs="@(UIFiles)" Outputs="@(UIFiles->'%(RootDir)%(Directory)ui_%(Filename).h')">
+<Message Text="Compiling: %(UIFiles.FullPath) using UIC" />
+<Exec Command="$(QTDIR)\bin\uic.exe %(UIFiles.FullPath) -o %(UIFiles.RootDir)%(UIFiles.Directory)ui_%(UIFiles.Filename).h"/>
+ </Target>
+</Project>
