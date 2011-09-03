@@ -23,9 +23,9 @@ string mainLogFile = ./logs/log.txt
 string configFile = ./config_world.txt
 
 [characters]
-int initialPlayfieldId = 100019
-int initialPlayfieldX = 0
-int initialPlayfieldY = 0
+int initialPlayfieldId = 100109
+int initialPlayfieldX = 963
+int initialPlayfieldY = 2142
 
 [playfields]
 # netChunkSize defines how many bytes are sent for one playfield data chunk 
