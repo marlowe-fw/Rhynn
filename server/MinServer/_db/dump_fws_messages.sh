@@ -1,1 +1,0 @@
-mysqldump --ext -u root -pxypass12 fws_messages > fws_messages.sql

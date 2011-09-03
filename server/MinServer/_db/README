@@ -1,0 +1,8 @@
+How to initialize the database
+* Open a command prompt and change the working directory to Rhynn/server/MinServer/_db
+* Type the following commands and replace <username> with your appropriate MySQL user name:
+ * mysql  -u <username> -p < init.sql
+ * mysql  -u <username> -p fw_core < fw_core.sql
+ * mysql  -u <username> -p fws_messages < fws_messages.sql
+
+You will be prompted for your password and if the scripts are read into MySQL successfully you should have all the required data.
