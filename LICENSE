@@ -19,9 +19,9 @@ A “covered work” means either the unmodified Program or a work based on the Prog
 1. Source Code and the content provided by macrolutions Ltd.
 
 1.	The Source Code (for both server and client) is absolutely free for everyone to use, considering that macrolutions Ltd. is the ONLY owner of the Source Code, excepting third-party modifications.
-2.	All sounds, images, sprites, etc. are property of macrolutions Ltd. and can’t be used in third-party software without Our clear permission; 
+2.	All sounds, images, sprites, logos, and similar media files included in the Source Code or Program are property of macrolutions Ltd. and can’t be used in a covered work or third-party software without Our clear permission; 
 You may freely use the provided multimedia materials ONLY for personal, non-public and non-commercial use.
-3.	You are free to modify and run compiled sources of the Program ONLY for testing purposes, without releasing it to public. See sections 2 and 3 for information about releasing modified versions of Rhynn.
+3.	You are free to modify and run compiled sources of the Program ONLY for testing purposes, without releasing it to public under the original names. See sections 2 and 3 for information about releasing modified versions of Rhynn.
 4.	Releasing your work under any other circumstances is permitted solely under the conditions stated below. Sublicensing is not allowed.
 5.	You may use and reproduce as many copies of the source code as is reasonably necessary only for the purpose of exercising the rights granted under this Agreement.
 6.	You shall not use the Source Code for anything other than its intended, legitimate, and legal purpose.
@@ -31,7 +31,7 @@ You may freely use the provided multimedia materials ONLY for personal, non-publ
 
 1.	You may release the modifications made in form of source code under the terms of section 4, provided that you also meet all of these conditions:
 -	The work must carry prominent notices stating who modified it and when he was modifying it. You should also state all changes made, e.g. in a CHANGES.txt file, distributed along with the Source Code files.
--	The work must carry prominent notices that it is out property of us, except for the modifications you made.
+-	The work must carry prominent notices that it is property of Us, except for the modifications you made.
 -	You must license the entire work, as a whole, under this license to anyone who comes into possession of a copy.
 -	The interfaces of the modified work must display appropriate legal notices of the owner of the source (macrolutions Ltd.).
 2.	Your modifications should contain enough information for other developers to understand the modified part of the Source Code.
@@ -39,24 +39,29 @@ You may freely use the provided multimedia materials ONLY for personal, non-publ
 3. Releasing pre-compiled binary versions.
 
 1.	You may release a covered work under the terms of sections 2 and 4, provided that you also meet the following conditions:
--	You may not gain any profit from releasing your work, it MUST be available for everyone free of charge.
--	Your work should contain prominent messages stating the owner of this product (macrolutions Ltd.), also stating that this version is modified, i.e. not original.
+-	You may not gain any profit from releasing your work or from operating services with it, it MUST be available for everyone free of charge.
+-	Your work should contain prominent messages stating the owner of the orginal Program and Source Code (macrolutions Ltd.), also stating that this version is modified, i.e. not original.
 -	You are not allowed to release any modifications that exploit any bugs, glitches, etc. on the official Rhynn server (these are so called “hack mods” and/or “cheat mods”).
+-	The original names "Fantasy Worlds: Rhynn" and "Rhynn" as well as the domain name "rhynn.com" are owned by macrolutions Ltd. and you must not use them as names for your work.
 2.	By releasing any binary version you have to provide the Source Code and any document that describes your modification (so called documentations, change logs, etc.) of the binary version you are releasing. 
-3.	Your modified versions may not contain any hidden key loggers, viruses, account stealers, backdoors, etc.
+3.	Your modified versions may not contain any key loggers, viruses, account stealers, backdoors, spyware, or similar components considered harmful.
 4.	You may obfuscate the compiled binary version of your modified work.
-
 
 4. Additional terms.
 
-1.	If the source owner gains additional permissions you may treat them as they were in this license agreement.
-2.	Everyone can run a private Rhynn server following these rules:
--	Publicly available Rhynn servers can be operated only by macrolutions Ltd. and by authorized individuals/organizations provided they explicitly received written permission to do so. macrolutions Ltd. reserves the right to revoke such permissions at any time which obliges the server operator to terminate the Rhynn server immediately.
--	If you set up and run your own Rhynn server for multiplayer use, modified or not, or distribute your own Rhynn client, modified or not, you MUST clearly state that this piece of software is not official.
--	You must run a modified or original server only for testing purposes and personal use, this means that no one has access to your server using the internet or other means and it is not available for public multiplayer play.
--	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE WE BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+1.	If the source owner gains additional permissions you may treat them as if they were in this license agreement.
+2.	Operating a Rhynn server or distributing a Rhynn client is subject to the following rules:
+-	Official Rhynn server(s) can be operated only by macrolutions Ltd. and by authorized individuals/organizations provided they explicitly received written permission to do so from Us. macrolutions Ltd. reserves the right to revoke such permissions at any time which obliges the server operator to terminate the Rhynn server immediately.
+-	You may run a modified or original server for testing purposes and personal use, this means that no one has access to your server using the internet or other means and it is not available for public multiplayer use.
+-  If you set up and operate your own Rhynn server for public multiplayer use, modified or not, you MUST clearly and explicitly state that the program is not official and that the servers are not operated by macrolutions Ltd.
+- You must not distribute a modified client which connects to official Rhynn servers unless you have been granted permission explicitly by Us in written form. If we find the distributed client to be inappropriate to be used on official servers you must stop distribution of such a client immediately.
+- If you distribute your own modified Rhynn client, you MUST clearly and explicitly state that the program is not official, and is not maintained by macrolutions Ltd. You must also state that the client connects to a non-official server unless the client connects to official servers under the conditions stated above.
+- In extension to what is stated in section 3, you must not gain any profit, directly or indirectly, from operating a Rhynn server, or from distributing a Rhynn client, or from any services and products related to it.
+
+5.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE WE BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-
-Copyright © 2003-2011 macrolutions Ltd. All rights reserved.
+Copyright © 2004-2011 macrolutions Ltd. All rights reserved.
 
