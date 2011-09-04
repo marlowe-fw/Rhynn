@@ -6,7 +6,6 @@
 		<script type="text/javascript" src="js/globalUtils.js"></script>
 		
 		<script type="text/javascript" src="js/lib/jquery-ui/js/jquery-ui.custom.min.js"></script>
-		<script type="text/javascript" src="ui_elements/playfield_list.js"></script>
 
 		<script type="text/javascript" src="js/Dialog.js"></script>
 		<script type="text/javascript" src="js/DlgCreatePlayfield.js"></script>

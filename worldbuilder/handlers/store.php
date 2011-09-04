@@ -26,7 +26,7 @@ foreach($rows as $row) {
 	$result['results'][] = $curResult;
 }
 
-print(json_encode($result, true));
+print(json_encode($result));
 
 
 function execStore($jsonRequest) {

@@ -11,5 +11,5 @@ $jsonRequest = $_REQUEST['request'];
 $pf = new DBQuery($jsonRequest['query']);
 $result = $pf->query($jsonRequest);
 
-print(json_encode($result, true));
+print(json_encode($result));
 ?>
