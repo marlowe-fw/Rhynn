@@ -154,7 +154,7 @@ CREATE TABLE `characters` (
   KEY `clan_id` (`clan_id`),
   KEY `name` (`name`),
   KEY `system_status` (`system_status`)
-) ENGINE=InnoDB AUTO_INCREMENT=100133 DEFAULT CHARSET=utf8 COMMENT='Characters of users and bots';
+) ENGINE=InnoDB AUTO_INCREMENT=100135 DEFAULT CHARSET=utf8 COMMENT='Characters of users and bots';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -163,7 +163,7 @@ CREATE TABLE `characters` (
 
 LOCK TABLES `characters` WRITE;
 /*!40000 ALTER TABLE `characters` DISABLE KEYS */;
-INSERT INTO `characters` VALUES (100131,100025,100098,0,100109,100005,'tor','2010-07-17 13:01:13',0,40,20,963,0,2142,0,0,0,0,0,200,0,200,10,0,10,200,0,200,0,200,0,200,0,200,0,10,0,10,0,'','normal','0000-00-00 00:00:00'),(100132,100025,100001,0,100019,100005,'k','2011-09-03 20:57:38',0,0,20,0,0,0,0,0,0,0,0,200,0,200,10,0,10,200,0,200,0,200,0,200,0,200,0,10,0,10,0,'','normal','0000-00-00 00:00:00');
+INSERT INTO `characters` VALUES (100131,100025,100098,0,100109,100005,'tor','2010-07-17 13:01:13',0,40,20,963,0,2142,0,0,0,0,0,200,0,200,10,0,10,200,0,200,0,200,0,200,0,200,0,10,0,10,0,'','normal','0000-00-00 00:00:00'),(100132,100025,100001,0,100019,100005,'k','2011-09-03 20:57:38',0,0,20,0,0,0,0,0,0,0,0,200,0,200,10,0,10,200,0,200,0,200,0,200,0,200,0,10,0,10,0,'','normal','0000-00-00 00:00:00'),(100133,100025,100002,0,100109,100005,'e','2011-09-03 21:05:21',0,20,20,963,0,2142,0,0,0,0,0,200,0,200,10,0,10,200,0,200,0,200,0,200,0,200,0,10,0,10,0,'','normal','0000-00-00 00:00:00');
 /*!40000 ALTER TABLE `characters` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -422,7 +422,7 @@ CREATE TABLE `user_sessions` (
   KEY `status` (`status`),
   KEY `user_status` (`user_id`,`status`),
   KEY `session_start` (`session_start`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -431,7 +431,6 @@ CREATE TABLE `user_sessions` (
 
 LOCK TABLES `user_sessions` WRITE;
 /*!40000 ALTER TABLE `user_sessions` DISABLE KEYS */;
-INSERT INTO `user_sessions` VALUES (1,100025,100131,'2011-09-03 20:31:33','2011-09-03 20:31:39',5896,'[2011-09-03 20:31:33] User validated\n','[110903 20:31:39:139] Invalid client action or state, detail: Unregistered message id, message id: 7564399\n','','','critical'),(2,100025,0,'2011-09-03 20:32:55','2011-09-03 20:34:53',118766,'[2011-09-03 20:32:55] User validated\n','[110903 20:33:03:146] character could not be created, classId: 100001, requ. name: q\n[110903 20:34:53:796] Invalid client action or state, detail: Unregistered message id, message id: 7564399\n','','','critical'),(3,100025,0,'2011-09-03 20:50:11','2011-09-03 20:50:51',40115,'[2011-09-03 20:50:11] User validated\n','[110903 20:50:51:425] Invalid client action or state, detail: Unregistered message id, message id: 7564399\n','','','critical'),(4,100025,100132,'2011-09-03 20:57:29','2011-09-03 20:58:57',88295,'[2011-09-03 20:57:29] User validated\n','','','','normal');
 /*!40000 ALTER TABLE `user_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -443,7 +442,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
-  `id` int(10) unsigned NOT NULL DEFAULT '0',
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `type` enum('user','moderator','observer','admin') NOT NULL DEFAULT 'user',
   `name` varchar(10) NOT NULL,
   `password` varchar(40) NOT NULL DEFAULT '',
@@ -463,7 +462,7 @@ CREATE TABLE `users` (
   KEY `premium_status` (`premium_status`),
   KEY `premium_expiry_date` (`premium_expiry_date`),
   KEY `system_status` (`user_system_status`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=100027 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -564,4 +563,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-09-03 21:01:51
+-- Dump completed on 2011-09-05 17:14:08
