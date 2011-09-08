@@ -151,12 +151,13 @@ namespace fwworld {
 		unsigned int frequency;
 		unsigned int range;
 
-		// joined members from other tables
-		ItemUsageType usageType;
-
 		// non-db members
 		clock_ms_t scheduledTime;
 		ScheduleType scheduleType;
+
+		// joined members from other tables
+		ItemUsageType usageType;
+
 	};
 
 }
