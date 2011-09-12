@@ -56,6 +56,9 @@ public class Equipment {
             case Item.CLIENT_TYPE_WEAPON_1: return Equipment.ET_WEAPON_1;
             case Item.CLIENT_TYPE_SHIELD_1: return Equipment.ET_SHIELD_1;
             case Item.CLIENT_TYPE_ARMOR: return Equipment.ET_ARMOR;
+            //Fix to equp helmet :)
+            case Item.CLIENT_TYPE_HELMET: return Equipment.ET_HELMET;
+            
             case Item.CLIENT_TYPE_BOOTS: return Equipment.ET_BOOTS;
             case Item.CLIENT_TYPE_GLOVES: return Equipment.ET_GLOVES;
             default: return -1;
