@@ -43,13 +43,12 @@ class DBC {
 
 	
 	public function sqlfix($s, $pbQuotes=true)	{
-		$magic = false;
-		if (get_magic_quotes_gpc() || get_magic_quotes_runtime()) {
-			$s = stripslashes($s);
-		} else {
-			$magic = true;
-		}
+		$magic = get_magic_quotes_gpc();
 		if (function_exists("mysql_real_escape_string")) {
+			if ($magic) {
+				$s = stripslashes($s);
+			}
+				
 			if ($pbQuotes) {
 				return "'".mysql_real_escape_string($s, $this->_handle)."'";
 			} else {
