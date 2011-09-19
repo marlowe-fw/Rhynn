@@ -44,7 +44,7 @@ class DBC {
 	
 	public function sqlfix($s, $pbQuotes=true)	{
 		$magic = false;
-		if (get_magic_quotes_gpc()) {
+		if (get_magic_quotes_gpc() || get_magic_quotes_runtime()) {
 			$s = stripslashes($s);
 		} else {
 			$magic = true;
