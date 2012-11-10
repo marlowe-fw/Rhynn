@@ -1,5 +1,5 @@
 <script type="text/javascript" src="js/lib/datatables/media/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="js/Datatable.js"></script>
+<script type="text/javascript" src="js/DataTable.js"></script>
 <link href="js/lib/datatables/media/css/demo_page.css" rel="stylesheet" type="text/css" />
 <link href="js/lib/datatables/media/css/custom_table_jui.css" rel="stylesheet" type="text/css" />
 
