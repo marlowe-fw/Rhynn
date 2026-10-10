@@ -1,3 +1,14 @@
+NOTE – October 2026
+
+I’m Jochai (“marlowe”), creator and original lead developer of Fantasy Worlds: Rhynn and founder of macrolutions Ltd., the company that published it.
+
+The Rhynn revival I’m involved in is Rhynn-X (https://rhynn-x.com), developed by Mindaugas Deltuva (DESOFTLAB) together with me. A formal licence for Rhynn-X and an updated LICENSE for this repository are being put in place. Until then the existing LICENSE applies unchanged — note that it does not permit using the original graphics or the names “Rhynn” / “Fantasy Worlds: Rhynn” in public projects.
+
+– marlowe, October 2026
+
+---
+--- Original README, last changed 2011-09-04 ---
+---
 The sources provided include all current code for the Rhynn client and server (based on versions 1.4+).
 Please refer to the wiki on github for instructions on how to build the software and further documentation: https://github.com/marlowe-fw/Rhynn/wiki
 
